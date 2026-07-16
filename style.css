@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+
+    background:linear-gradient(
+        to bottom,
+        #030712,
+        #07142b,
+        #102850,
+        #163d72
+    );
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+#sky{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+.hero{
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    max-width:500px;
+
+    text-align:center;
+
+}
+
+h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    line-height:1.1;
+
+}
+
+p{
+
+    font-size:1.2rem;
+
+    opacity:.8;
+
+    line-height:1.6;
+
+    margin-bottom:45px;
+
+}
+
+button{
+
+    background:white;
+
+    color:#08111f;
+
+    border:none;
+
+    padding:16px 38px;
+
+    border-radius:999px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}.star{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    opacity:.3;
+
+    animation:twinkle infinite ease-in-out;
+
+}
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+        transform:scale(.8);
+
+    }
+
+    50%{
+
+        opacity:1;
+        transform:scale(1.4);
+
+    }
+
+    100%{
+
+        opacity:.2;
+        transform:scale(.8);
+
+    }
+
+}
