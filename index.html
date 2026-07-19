@@ -7,74 +7,71 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>10 Estrelas para Você ✨</title>
+    <title>✨10 Estrelas para Você✨</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
-
 <body>
-
 
     <!-- Fundo do universo -->
 
     <div id="universe">
 
-        <div class="nebula"></div>
+        <div id="stars-back"></div>
+        <div id="stars-middle"></div>
+        <div id="stars-front"></div>
 
         <div id="particles"></div>
+
+        <div class="nebula"></div>
 
         <div id="shooting-stars"></div>
 
     </div>
 
-
-
     <!-- Conteúdo principal -->
 
-    <main id="app">
+    <div id="app" class="app-container">
 
+        <section id="intro" class="intro-screen">
 
-        <section class="screen intro">
+            <div class="intro-card">
+                
+                <h1>✨10 Estrelas para Você✨</h1>
+                
+                <p>
+                    Um pequeno universo criado<br>
+                    especialmente para nós dois.
+                </p>
 
-
-            <h1>
-
-                ✨ 10 Estrelas<br>
-                para Você ✨
-
-            </h1>
-
-
-
-            <p>
-
-                Um pequeno universo criado<br>
-                especialmente para nós dois.
-
-            </p>
-
-
-
-            <button onclick="startJourney()">
-
-🌙 Começar a Explorar
-
-</button>
-
+                   <button onclick="startJourney()">
+                        🌙 Começar a Explorar 🌙
+                   </button>
+                     
+            </div>
 
         </section>
 
+    </div>
 
     </main>
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="script.js"></script>
-
 
 </body>
 
 </html>
+
+<span class="star-number">
+    ${number}
+</span>
